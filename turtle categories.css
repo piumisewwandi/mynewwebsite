@@ -1,0 +1,355 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background-image: url(./images/turtle\ category\ cover\ image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    margin-bottom: 30px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+  
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 30px 9px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+  
+.logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+  }
+
+/*nav bar styles starts*/
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+  .dropdown{
+    display: none;
+    top: 6%;
+    position: relative;
+  }
+  .dropdown ul{
+    position: absolute;
+  }
+   .main ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color: white;
+    margin-top: 2px;
+    margin-left: -5px;
+   }
+   .main ul li:hover .dropdown ul{
+    display: block;
+    margin: 6px;
+   }
+   .main ul li:hover .dropdown ul li{
+    width: 70px;
+    padding: 2px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+   }
+  /*nav bar styles ends*/
+  
+  
+  .logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+  }
+
+  .title{
+    position: absolute;
+    top: 58%;
+    left: 48%;
+    transform: translate(-80%,-85%);
+    
+  }
+  .title h1{
+    color: white;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.60);
+  }
+
+/*turtle category style starts*/
+
+.container1{
+  width: 100%;
+  background-color: black;
+  padding-bottom: 20px;
+  margin-top: -3.5%;
+}
+
+.main1 .intro{
+  text-align: center;
+  padding-top: 10px;
+}
+.main1 .intro h2{
+  color: darkcyan;
+  font-size: 32px;
+  text-align: center;
+  padding: 30px;
+  
+}
+.main1 .intro p{
+  color: white;
+  font-size: 17px;
+  margin-top: 15px;
+  padding: 15px;
+}
+.image-cards{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 15px;
+  margin: 10px;
+  margin-top: 50px;
+  padding: 7px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .5s;
+  cursor: pointer;
+}
+.image-cards .image-card{
+  width: 280px;
+  position: relative;
+  border: 3px solid white;
+}
+.image-cards .image-card:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)  , 0 3px 6px rgba(0, 0, 0, 0.23) ;
+  transform: translate(0px,-10px);
+}
+.image-section img{
+  width: 280px;
+  height: 250px;
+}
+.para{
+  padding: 15px 2px;
+  padding-right: 35px;
+}
+.para h4{
+  color: darkcyan;
+  font-size: 20px;
+  width: 98%;
+  padding-left: 10px;
+  
+}
+.para p{
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.para button{
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #3a706a;
+  padding: 8px 15px;
+}
+.para a{
+  text-decoration: none;
+  color: white;
+}
+
+.allset{
+  padding-top: 5px;
+  background-color: black;
+}
+.detailed{
+  display: flex;
+  background-color: black;
+}
+#img{
+  width: 350px;
+  height: 300px;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 120px;
+}
+.detailed .para1 h2{
+  color: darkcyan;
+  font-size: 34px;
+  text-align: left;
+  padding-left: 50px;
+}
+.detailed .para1 p{
+  color: white;
+  font-size: 17px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+.para1{
+  padding-top: 50px;
+}
+#maps{
+  width: 300px;
+  height: 300px;
+  padding-right: 20px;
+  padding-top: 120px;
+}
+table {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  width: 100%;
+  
+
+}
+.heading{
+  color: darkcyan;
+  font-size: 24px;
+  text-align: center;
+}
+
+th, td {
+  border: 3px solid #ddd;
+  padding: 20px;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  
+}
+
+th {
+  background-color: #cce3f1;
+  color: black;
+}
+
+tfoot th {
+  background-color: black;
+  text-align: right;
+  color: white;
+}
+
+
+@media (max-height:800px) {
+
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+      background-attachment: scroll;
+  }
+  .subnav{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+  }
+  header ul{
+    text-align: right;
+  
+  }
+}
+
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+      

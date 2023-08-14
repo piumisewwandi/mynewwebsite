@@ -1,0 +1,242 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background-image: url(./images/hikkaduwa\ cover\ image.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+
+  /*nav bar styles starts*/
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+  
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /*nav bar styles ends*/
+  
+  
+  .logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+  }
+/*title on the background image*/
+  .title{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-88%,-50%);
+    
+  }
+  .title h1{
+    color: white;
+    font-weight: 400px;
+    font-size: 75px;
+    text-transform: uppercase;
+  }
+  /*button styles*/
+  .title a{
+    font-size: 20px;
+    width: 150px;
+    background-color: rgb(46, 101, 101);
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 4px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /*title 2nd heading*/
+.intro{
+  padding: 20px 0;
+  background-color: black;
+
+}
+.activities h2{
+  color: darkcyan;
+  text-align: center;
+  padding: 2%;
+  background-color: black;
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.activities p{
+  font-size: 17px;
+  padding: 15px;
+  width: 800px;
+  background-color: black;
+  color: white;
+}
+.activities h3{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+  background-color: black;
+  color: darkcyan;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.activities ul{
+  color:white;
+  font-size: 17px;
+  list-style: disc;
+}
+
+  .intro{
+    display: flex;
+  }
+  .activities{
+    flex: 1;
+    margin-right: 20px;
+  }
+  .map{
+    flex: 1;
+    padding-left: 30px;
+    padding-top: 12%;
+  }
+  .image{
+    background-color: black;
+    padding-left: 20px;
+  }
+  #imge{
+    height: 260px;
+    padding: 10px;
+    width: 350px;
+  }
+  /*footer design*/
+
+
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media screen and (max-width:610px)
+{
+  header{
+    background-attachment: scroll;
+  }
+  .title h1{
+    font-size: 36px;
+  }
+.activities h2, h3{
+  width: 70%;
+}
+.activities p{
+  width: 65%;
+}
+.activities li{
+  width: 65%;
+  margin-left: -10px;
+}
+.intro{
+  display: grid;
+}
+.map{
+  width: -10%;
+}
+.subnav{
+  display: flex;
+  align-content: end;
+  flex-wrap: wrap;
+}
+header ul{
+  text-align: right;
+}
+}

@@ -1,0 +1,251 @@
+
+
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background-image: url(./images/kosgoda\ cover\ image.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+
+  /*nav bar styles starts*/
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+  
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /*nav bar styles ends*/
+  
+  
+  .logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;}
+
+    /*title on the background image*/
+  .title{
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-88%,-50%);
+    font-size: 60px;
+  }
+  .animate-charcter
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+      white 0%,
+      lightgreen 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  /*text animation ends*/
+
+  .intro{
+    display: flex;
+    background-color: black;
+    padding-bottom: 30px;
+  }
+
+#img1{
+  width: 400px;
+  height: auto;
+}
+#img2{
+  width: 400px;
+  height: 60%;
+}
+.images1{
+ padding: 20px;
+}
+.images2{
+padding: 20px;
+}
+#intro1{
+  padding-left: 15px;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+#intro1 h2{
+  color: darkcyan;
+}
+#intro1 p{
+  color: white;
+  margin-top: 20px;
+}
+#intro2{
+  margin-top: 80px;
+}
+#intro3{
+  margin-top: 90px;
+}
+.data{
+  display: flex;
+  background-color: black;
+  border-top: 1px solid white;
+}
+.data h2{
+   color: darkcyan;
+   text-align: center;
+   padding: 30px;
+}
+.data p{
+  color: white;
+}
+#species ol{
+  color: white;
+  padding: 20px;
+
+}
+#impact p{
+  padding: 25px;
+}
+.map{
+  padding: 60px;
+}
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 880px) {
+  .intro{
+    display: grid;
+  }
+  .data{
+    display: grid;
+  }
+  .data h2{
+    text-align: left;
+  }
+  .data li{
+    width: 55%;
+    margin-left: 15px;
+  }
+  #impact{
+    width: 60%;
+  }
+  #impact p{
+    font-size: 16px;
+  }
+  .images1{
+    margin-top: -70px;
+  }
+  .images2{
+    margin-top: -29%;
+  }
+  .map{
+    margin-top: -50px;
+  }
+  header{
+    background-attachment: scroll;
+  }
+  .title h3{
+    font-size: 35px;
+  }
+  .subnav{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+  }
+  header ul{
+    text-align: right;
+  
+  }
+}
+      

@@ -1,0 +1,235 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background-image: url(./images/threats\ cover\ image.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+
+  /*nav bar styles starts*/
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+  
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /*nav bar styles ends*/
+  
+  
+  .logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+  }
+/*title on the background image*/
+  .title{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-88%,-50%);
+    
+  }
+  .title h1{
+    color: white;
+    font-size: 75px;
+    text-transform: uppercase;
+  }
+
+
+  .description{
+    background-color: black;
+    color: white;
+  }
+.intro h2{
+    color: darkcyan;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 2%;
+}
+  .intro p {
+    padding: 20px 0;
+    font-size: 17px;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .btn1{
+    padding: 10px 28px;
+    display: inline-block;
+    background: darkcyan;
+    font-size: 18px;
+    width: 20%;
+    outline: none;
+    box-shadow: 1 2px 20px white;
+    border-radius: 38px;
+    cursor: pointer;
+    transition: box-shadow 0.4s;
+    transition: 0.4s;
+    animation-delay: .8s;
+    animation-duration: .5s;  
+  }
+  .btn1 a{
+    color: white;
+  }
+  .threats{
+    display: flex;
+
+  }
+  .threats h2{
+    padding: 3%;
+    text-align: center;
+    color: darkcyan;
+  }
+
+.threats p{
+  font-size: 16px;
+  padding: 30px;
+
+}
+.threats a{
+  font-size: 15px;
+  color: firebrick;
+}
+.threats h3{
+  font-size: 19px;
+  color: darkcyan;
+  padding: 10px;
+}
+.list {
+  padding: 20px;
+}
+img{
+  width: 450px;
+  height: 360px;
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width:610px)
+{
+  .title h1{
+    font-size: 39px;
+    margin-top: 65%;
+    margin-left: 22%;
+  }
+  .threats{
+    display: grid;
+  }
+  .intro p{
+    width: 400px;
+    font-size: 15px;
+    margin-left: 4%;
+  }
+  img{
+    width: 400px;
+  }
+  .btn1{
+    padding: 8px 45px;
+  
+  }
+  .btn1 a{
+    color: white;
+    margin-left: -35px;
+  }
+  .subnav{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+  }
+  header ul{
+    text-align: right;
+  
+  }
+
+}
+@media (max-height:800px) {
+  footer {
+      position: static;
+  }
+  header {
+      padding-top: 40px;
+  }
+}
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}

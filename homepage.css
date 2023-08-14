@@ -1,0 +1,421 @@
+*{
+  margin:0px ;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  background-image: url(./images/cover\ image.jpg);
+  height: 100vh;
+  opacity: 0.9;
+  background-size: cover;
+  background-position: center;
+  min-height: 100px;
+  background-attachment: fixed;
+  position: relative;
+}
+/*nav bar styles starts*/
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  min-height: 3px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 17px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+ul li a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+/*nav bar styles ends*/
+
+/*text styles in the background*/
+.logo img{
+  float: left;
+  width: 110px;
+  height: auto;
+  padding: 10px 10px;
+}
+
+.title{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-88%,-50%);
+}
+.title h3{
+  color: white;
+  font-size: 75px;
+}
+
+/* Slide Right Animation */
+.slide-right-container {
+  padding: 15%;
+  display: inline-block;
+  position: relative;
+  color: white;
+  left: 5px;
+  font-size: 60px;
+  text-transform: uppercase;
+  
+}
+
+.slide-right-text {
+  display: inline-block;
+  animation: slideRightAnimation 3.5s ease-in-out 2s;
+}
+
+@keyframes slideRightAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.button{
+  position: absolute;
+  top: 62%;
+  left: 43%;
+  transform: translate(-85%,-50%);
+
+}
+.button{
+  border: 1px solid white;
+  padding: 5px 30px;
+  color: white;
+  transition: 0.5 linear;
+  font-size: 18px;
+  text-decoration: none;
+}
+.button:hover{
+  background-color: white;
+  color: black;
+
+}
+
+/*text styles in the background ends*/
+
+/*about us styles*/
+
+.aboutus{
+  background-color: black;
+  display: flex;
+}
+
+#img{
+  width: 380px;
+  height: 500px;
+  padding: 50px;
+  padding-right: 100px;
+}
+.aboutus .about h2{
+  color: darkcyan;
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+}
+.aboutus .about p{
+  color: white;
+  font-size: 17px;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-right: 150px;
+}
+.aboutus ul{
+  color: white;
+}
+
+.intro{
+  background-color: black;
+}
+.intro h2{
+  color: darkcyan;
+  font-size: 34px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+.intro p {
+  color: white;
+  font-size: 17px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+.intro ol {
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+  padding-left: 50px;
+}
+
+/*news sections styles*/
+
+.container{
+  width: 100%;
+  background-color: black;
+  padding-bottom: 20px;
+}
+
+.blog .title1{
+  text-align: center;
+}
+.blog .title1 h2{
+  color: darkcyan;
+  font-size: 32px;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid white;
+}
+.blog .title1 p{
+  color: white;
+  font-size: 17px;
+  margin-top: 20px;
+  padding: 15px;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 15px;
+  margin: 25px;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .5s;
+  cursor: pointer;
+}
+.cards .card{
+  width: 350px;
+  position: relative;
+  border: 3px solid white;
+}
+.cards .card:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)  , 0 3px 6px rgba(0, 0, 0, 0.23) ;
+  transform: translate(0px,-10px);
+}
+.image-section img{
+  width: 350px;
+  height: 250px;
+}
+.content{
+  padding: 15px 2px;
+  padding-right: 35px;
+}
+.content h4{
+  color: white;
+  font-size: 18px;
+  width: 98%;
+  padding-left: 10px;
+  
+}
+.content p{
+  color: white;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.content a{
+  text-decoration: none;
+  color: white;
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #3a706a;
+  padding: 8px 15px;
+}
+.card .posted-date{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: darkcyan;
+  padding: 6px 15px;
+}
+/*gallery styles*/
+
+.container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+}
+
+.container1 .heading{
+  width: 100%;
+  padding-bottom: 50px;
+}
+.container1 .heading h3{
+  font-size: 36px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
+  color: darkcyan;
+  border-top: 1px solid white;
+}
+.container1 .box{
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+ background-color: black;
+ padding: 10px;
+}
+
+.container1 .box .dream{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.container1 .box .dream img{
+  width: 100%;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+
+.container1 .btn{
+  margin: 40px 0 70px 0;
+  background: #222;
+  padding: 15px 40px ;
+  border-radius: 5px;
+}
+
+.container1 .btn a{
+ color: #fff;
+ font-size: 20px;
+ text-decoration: none;
+ letter-spacing: 3px;
+}
+
+
+
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+    
+/*responsive*/
+
+@media screen and (max-width:610px)
+{
+  .subnav{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+  }
+  .aboutus{
+    display: grid;
+  }
+  .aboutus h2{
+    margin-left: -14%;
+  }
+  .aboutus p{
+    margin-top: -45px;
+    width: 72%;
+  }
+  #img{
+    width: 290px;
+    height: 400px;
+    margin-left: 20px;
+  }
+  .intro ol{
+    width: 100%;
+    padding-left: 50px;
+  }
+  .cards .card .image-section{
+    display: inline-flex;
+  }
+  header{
+    background-attachment: scroll;
+  }
+.button{
+  padding: 5px 5px;
+  top: 60%;
+  left: 40%;
+  font-size: 17px;
+}
+.button:hover{
+  color: black;
+  background-color: white;
+}
+  .title h3{
+    font-size: 26px;
+    margin-left: 15%;
+  }
+header ul{
+  text-align: right;
+
+}
+.cards{
+  display: grid;
+}
+footer {
+  position: static;
+}
+header {
+  padding-top: 40px;
+}
+.footer-left .footer-links{
+  width:65%;
+}
+}

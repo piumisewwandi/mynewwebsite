@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image: url(./images/sea-g689e75b37_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+header{
+  height: 100vh;
+  min-height: 100px;
+  position: relative;
+  opacity: 0.95;
+}
+
+
+
+ul{
+  font-size: 17px;
+  font-weight: 770;
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  padding: 5px 10px;
+  position: fixed;
+  background-image: linear-gradient(#033747, #012733);
+  padding-left: 950px;
+}
+
+ul li{
+  display: inline-block;
+  width: 100px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 3px 6px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+ul li a:hover{
+  background-color: white;
+  color: black;
+}
+.logo img{
+  float: left;
+  width: 110px;
+  height: auto;
+  padding: 10px 10px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+.title{
+  position: absolute;
+  top: 22%;
+  left: 62%;
+  transform: translate(-86%,-75%);
+  text-transform: uppercase;
+}
+
+.title h1{
+  color: white;
+  font-size: 80px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+.container{
+  position: absolute; 
+  top: 3%; 
+  left: 12%; 
+  background-color: rgba(255, 255, 255, 0.86);
+  width: 450px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 3%;
+  border-radius: 10px;
+  margin-top: 250px; 
+}
+
+.subsection-1 h2{
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+.subsection-1 .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+  text-transform: capitalize;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.btn{
+  margin-top: 30px;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 350px;
+  background: #012733a0;
+  padding: 8px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover{
+  background: #012733;
+}
+
+.subsection-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  margin-top: 10px;
+}
+
+/*summary styles */
+.summary {
+  width:45%; 
+  background-color: rgba(255, 255, 255, 0.808);
+  border: 2px solid rgba(255, 255, 255, .5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  border-radius: 20px;
+  padding: 10px 40px;
+  margin-left: 900px;
+  height: 480px;
+  margin-top: -600px;
+}
+.summary h2{
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #0d3c61;
+}
+
+/*table styles */
+.summary-table {
+  width: 100%;
+  font-size: 17px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+
+.summary-table th, .summary-table td {
+  padding: 15px;
+  border-bottom: 1px solid #012733;
+  color: #012733;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+  /*responsive styles */
+/*first device-samsung galaxy s20 ultra*/
+
+@media screen and (max-width: 412px) {
+
+}

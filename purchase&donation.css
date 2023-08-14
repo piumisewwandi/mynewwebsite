@@ -1,0 +1,379 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  header{
+    background-image: url(./images/purchase\ and\ donation\ cover\ image.jpg);
+    height: 100vh;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-attachment: fixed;
+    position: relative;
+  
+  }
+
+  /*nav bar styles starts*/
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    min-height: 3px;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 17px;
+  }
+  
+  ul li{
+    display: inline-block;
+  
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+  
+  }
+  
+  ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /*nav bar styles ends*/
+  
+  
+  .logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+  }
+
+    /*title on the background image*/
+  .title{
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-88%,-50%);
+    
+  }
+  .title h1{
+    color: white;
+    font-weight: 400px;
+    font-size: 75px;
+    text-transform: uppercase;
+    
+  }
+  .slide-left{
+    animation: slideleft 2s linear forwards;
+
+  }
+  @keyframes slideleft{
+    0%{
+      transform: translate(100px);
+      opacity: 0;
+    }
+    100%{
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+  .aboutpage{
+    width: 100%;
+    padding: 20px 0;
+    background-color: black;
+
+  }
+.aboutpage img{
+  width: 360px;
+  height: 500px;
+  padding-left: 80px;
+  padding-right: 50px;
+  animation-delay: .3s;
+  animation-duration: 1.5s;
+}
+.abouttext{
+  padding: 20px;
+
+}
+.aboutmain{
+  max-width: 95%;
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+.abouttext h1{
+  margin-bottom: 10px;
+  color: darkcyan;
+  font-size: 34px;
+  letter-spacing: 2px;
+  animation-delay: .4s;
+  animation-duration: 1.5s;
+}
+.abouttext p{
+  font-size: 17px;
+  line-height: 25px;
+  color: white;
+  margin-bottom: 42px;
+  margin-top: 30px;
+  animation-delay: .8s;
+  animation-duration: 1.5s;
+
+}
+.btn{
+  padding: 10px 28px;
+  display: inline-block;
+  background: grey;
+  font-size: 18px;
+  width: 20%;
+  outline: none;
+  box-shadow: 1 2px 20px white;
+  border-radius: 38px;
+  cursor: pointer;
+  transition: box-shadow 0.4s;
+  transition: 0.4s;
+  animation-delay: .8s;
+  animation-duration: .5s;  
+}
+.btn a{
+  color: white;
+}
+.anim{
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: moveup 0.6s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+}
+.anim1{
+  opacity: 0;
+  transform: translateX(50px);
+  animation: move 0.6s linear forwards;
+}
+@keyframes move{
+  100%{
+    opacity: 1;
+    transform:translateX(0px) ;
+  }
+}
+
+.morepage{
+  background-color: black;
+  padding-left: 50px;
+  border-top: 2px solid white;
+}
+.section2 h1{
+  color: darkcyan;
+  font-size: 34px;
+  padding: 20px;
+  animation-delay: .5s;
+  animation-duration: 2s;
+}
+.section2 p{
+  color: white;
+  padding: 20px;
+  animation-delay: .7s;
+  animation-duration: 1.5s;
+}
+.anim1{
+  opacity: 0;
+  transform: translateX(50px);
+  animation: move 0.6s linear forwards;
+}
+@keyframes move{
+  100%{
+    opacity: 1;
+    transform:translateX(0px) ;
+  }
+}
+ /*styling mechandise section*/
+
+ .gallery h3{
+  text-align: center;
+  font-size: 23px;
+  color: white;
+ }
+ a{
+  text-decoration: none;
+ }
+ .gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+ }
+ .content{
+  width: 19%;
+  margin: 15px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: .4s;
+  background-color: black;
+  border: 2px solid white;
+}
+.content:hover{
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)  , 0 3px 6px rgba(0, 0, 0, 0.23) ;
+  transform: translate(0px,-8px);
+}
+.gallery img{
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.gallery p{
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  padding-top: 0 8px;
+}
+.gallery h4{
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 10px;
+}
+button{
+  text-align: center;
+  font-size: 21px;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.buy{
+  background: darkcyan;
+}
+
+/* Footer*/
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px;
+  padding: 50px 50px 60px 50px;
+}
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font-size: 36px;
+  margin: 0;
+}
+
+
+.footer-distributed h3 span {
+  color: darkcyan;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 880px) {
+  .aboutmain{
+    display: grid;
+  }
+  .aboutmain h1{
+    margin-left: -10%;
+    margin-right: 20%;
+  }
+  .aboutmain p{
+    margin-left: -10%;
+    margin-right: 20%;
+    font-size: 16px;
+  }
+  .aboutmain .btn{
+    margin-left: -10%;
+    margin-right: 20%;
+    padding: 10px;
+  }
+.aboutmain .anim1{
+    margin-left: -18%;
+    margin-right: 20%;
+  }
+  .gallery .content{
+    display: grid;
+    margin: 5%;
+    margin-right: 5%;
+    width: 60%;
+  }
+  .content{
+    width: 40%;
+  }
+  .title h1{
+    font-size: 33px;
+    padding-left: 15px;
+  }
+  .subnav{
+    display: flex;
+    align-content: end;
+    flex-wrap: wrap;
+  }
+  header ul{
+    text-align: right;
+  
+  }
+
+}       
+
+
+
+
+
+
+
+
+
+

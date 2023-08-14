@@ -1,0 +1,427 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url(./images/sea-g689e75b37_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    background-attachment: fixed;
+    position: relative;
+    opacity: 0.95;
+  }
+/*nav bar styles*/
+
+ul{
+    font-size: 17px;
+    font-weight: 770;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 5px 10px;
+    position: fixed;
+    background-image: linear-gradient(#033747, #012733);
+    padding-left: 950px;
+}
+  
+ul li{
+    display: inline-block;
+    width: 100px;
+}
+  
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+
+}
+  
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    width: 110px;
+    height: auto;
+    padding: 10px 10px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/*text on the background image style*/
+.title{
+    position: absolute;
+    top: 26%;
+    left: 24%;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic;
+    position: fixed;
+}
+.title h1{
+    color: white;
+    font-size: 130px;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*subsetion 1 styles*/
+.subsection{
+    background-image: radial-gradient(circle, #012733, #012a37, #012d3a, #02303e, #023342, #063644, #0a3945, #0f3c47, #184047, #214447, #294748, #314b49);
+    background-size: cover;
+    opacity: 0.95;
+    background-position: center;
+    height: 520vh;
+    width: 100%;
+    background-attachment: scroll;
+}
+.subsection-1{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 700px;
+    transform: translate(5%,12%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.subsection-1 #Date, input, #duration{
+  background-color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 7px;
+  border: 2px solid #012733;
+}
+
+/*calendar styles*/
+
+.calendar-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.weekday {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: lightblue;
+}
+
+.selected-date-box {
+  margin: 10px;
+  background-color: #80cdd0cf;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.calendar-container h3{
+  background-color: #033747;
+  width: 100%;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+}
+#prevMonth, #nextMonth{
+  background-color: #033747;
+  height: 47px;
+  width: 30px;
+  color: white;
+  font-weight: 800;
+  border: 2px solid rgba(128, 128, 128, 0.599);
+}
+
+
+/*subsection-2 styles*/
+
+.subsection-2{
+    background-color: rgba(216, 235, 236, 0.4);
+    width: 90%;
+    height: 600px;
+    transform: translate(5%,12%);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.categories{
+  padding-left: 45%;
+}
+label{
+  padding-left: 30%;
+}
+.cate{
+  text-align: center;
+}
+#duration{
+  height: 100px;
+  width: 300px;
+}
+
+
+
+/*subsection-3 styles*/
+
+.subsection-3{
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 90%;
+    height: 950px;
+    transform: translate(5%,12%);
+    border-radius: 10px;
+}
+.subsection h2{
+    background-color: #012733;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 60px;
+    text-align: center;
+    font-family:poppins;
+    color:white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.subsection p{
+    margin: 30px;
+    font-size: 17px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+span{
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.charges{
+    padding-left: 15%;
+}
+#outputBox{
+  padding: 10px;
+  margin-left: 80px;
+  height: 20px;
+  background-color: #80cdd0cf;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 50%;
+}
+
+/*pricing table*/
+.subsection-4{
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 1300px;
+  transform: translate(0%,12%);
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: -100px;
+}
+.subsection-4-1{
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 60%;
+  margin-left: 200px;
+  height: 550px;
+  transform: translate(5%,12%);
+  border-radius: 10px;
+}
+.pricingtable{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-spacing: 2;
+}
+
+.td1{
+  padding: 15px 20px;
+  width: 300px;
+  text-align: center;
+  background-color: rgba(216, 235, 236, 0.4);
+  font-size: 17px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.td{
+  padding: 15px 20px;
+  text-align: center;
+  background-color: #0a3945;
+  color: white;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/*summary table*/
+
+.summary{
+  margin-top: 100px;
+}
+#summary-table{
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 70%;
+  margin-left: 150px;
+  height: 350px;
+  transform: translate(5%,12%);
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.summary-table th, .summary-table td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  text-align: left;
+}
+/*continue to purchase btn*/
+.lastbtn{
+  margin-top: 100px;
+  
+  border: 2px solid white;
+}
+.btn{
+  background-color: #012733;
+  height: 50px;
+  font-size: 19px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+/*responsive styles */
+/*first device-samsung galaxy s20 ultra*/
+
+@media screen and (max-width:412px)
+{  
+    .title h1{
+      font-size: 60px;
+      margin-left: -90px;
+      margin-top: 120px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar ul li{
+      display: flex;
+      align-content: end;
+      flex-wrap: wrap;
+    }
+    .subsection-1,.subsection-2{
+      height: 940px;
+      margin-bottom: 70px;
+    }
+    .calendar-container{
+      padding: 20px;
+    }
+    label{
+      margin-left: -80px;
+    }
+    .categories{
+      padding: 20px;
+      margin-left: 50px;
+    }
+    .subsection{
+      height: 600vh;
+    }
+    .subsection-3{
+      height: 1300px;
+    }
+    .subsection-4{
+      height: 1600px;
+    }
+    .charges{
+      margin-left: -35px;
+    }
+    #duration{
+      margin-left: 30px;
+    }
+    .subsection-4-1{
+      margin-left: -10px;
+      height: 900px;
+      width:360px;
+      margin-top: -70px;
+    }
+    .summary{
+      margin-left: -155px;
+      width:500px;
+    }
+    .summary h2{
+      margin-left: 150px;
+      width: auto;
+    }
+    .lastbtn{
+      margin-left: -12px;
+    }
+}
+
+/*second device- iphone 11*/
+@media screen and (max-width:400px)
+{
+  .title h1{
+    margin-top: 85px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .subsection{
+    height: 750vh;
+  }
+  .title h1{
+    margin-left: -30px;
+  }
+
+}
+/*third device- ipad Air*/
+@media screen and (max-width:820px)
+{
+  .title h1{
+   font-size: 110px;
+   margin-left: -130px;
+   margin-top: 120px;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  .subsection-1{
+    height: 750px;
+  }
+  .subsection{
+    height: 4000px;
+  }
+  .subsection-3{
+    height: 1050px;
+  }
+  #outputBox{
+    width: 600px;
+  }
+  .lastbtn{
+    width: auto;
+    margin-left: 20px;
+  }
+}
+

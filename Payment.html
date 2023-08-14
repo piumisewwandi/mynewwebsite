@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="./payment.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li class="nav1"><a href="./homepage.html">Home</a></li>
+                <li class="nav1"><a href="./Tickets.html">Tickets</a></li>
+                <li class="nav1"><a href="./Details.html">Details</a></li>
+                <li class="nav1"><a href="./Payment.html">Payments</a></li>
+                <li class="nav1"><a href="./confirmation.html">Confirmation</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <a href="./homepage.html"><img src="./images/logo.png" alt="Shellheavenlogo"></a>
+        </div>
+
+        <div class="title">
+            <h1>Buy tickets</h1>
+        </div>
+    </header>
+    <div class="subsection">
+        <div class="container">
+            <div class="subsection-1">
+                        <form method="get" class="form">
+                            <h2>Payment Details</h2>
+                            <div class="card space icon-relative">
+                              <label class="label">Card holder:</label>
+                              <input type="text" class="input"  id="name" placeholder="Name on the Card" required>
+                            </div>
+        
+                            <div class="card space icon-relative">
+                              <label class="label">Card number:</label>
+                              <input type="number" class="input" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Enter Card Number" maxlength=16 required >
+                            </div>
+        
+                            <div class="card-grp space">
+                                <div class="card-item icon-relative">
+                                <label class="label">Expiry date:</label>
+                                <input type="number" id="expDate" name="expiry-data" class="input"  placeholder="MM/ YY" required>
+                                </div>
+        
+                                <div class="card-item icon-relative">
+                                <label class="label">CVC:</label>
+                                <input type="number" id="cvc" class="input" data-mask="000" placeholder="000" required maxlength="3">
+                                </div>
+                            </div>
+                            <input type="submit" class="btn" value="Pay">
+                        </form>
+            </div>
+        </div>
+        
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <table id="summary-table" class="summary-table"></table>
+                
+                </div>        
+       
+    </div>
+        
+
+            </div>
+        </div>
+    
+    
+<script src="./Payment.js"></script>
+</body>
+</html>

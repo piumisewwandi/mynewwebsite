@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./Details.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css">
+    
+
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li class="nav1"><a href="./homepage.html">Home</a></li>
+                <li class="nav1"><a href="./Tickets.html">Tickets</a></li>
+                <li class="nav1"><a href="#">Details</a></li>
+                <li class="nav1"><a href="#">Payments</a></li>
+                <li class="nav1"><a href="#">Confirmation</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <a href="./homepage.html"><img src="./images/logo.png" alt="Shellheavenlogo"></a>
+        </div>
+        <div class="title">
+            <h1>Buy tickets</h1>
+        </div>
+
+        <div class="subsection">
+            <div class="container">
+                <div class="subsection-1">
+                    <!--Enter your details section-->
+                    <form method="get" id="detailsForm">
+                        <h2>Enter Your Details</h2>
+                        <div class="inputBox">
+                                <span>Full name :</span>
+                                <input type="text" placeholder="Enter Your Name" id="details" class="fullName" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Mobile Number : </span>
+                            <input class="telno" type="number" min="10" id="details" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="example123@example.com" id="details" class="email" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Confirm Email :</span>
+                            <input type="email" id="details" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Gender :</span>
+                            <select id="gender">
+                                <option value="Select gender ">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                        </div>
+                    
+                        <a href="./Payment.html"></a>
+                        <input type="submit" value="Continue with Purchase" class="btn">
+                    </form>
+                </div>
+            </div>
+            <!--summry table section-->
+            <div class="summary">
+                <h2>Summary</h2>
+                <table id="summary-table" class="summary-table"></table>
+            </div>
+        </div>
+    </header>
+
+    
+
+<script src="./Details.js"></script>
+</body>
+</html>

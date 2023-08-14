@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="Tickets.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul>
+                <li class="nav1"><a href="./homepage.html">Home</a></li>
+                <li class="nav1"><a href="./Tickets.html">Tickets</a></li>
+                <li class="nav1"><a href="./Details.html">Details</a></li>
+                <li class="nav1"><a href="./Payment.html">Payments</a></li>
+                <li class="nav1"><a href="./confirmation.html">Confirmation</a></li>
+            </ul>
+        </div>
+
+        <div class="logo">
+            <a href="./homepage.html"><img src="./images/logo.png" alt="Shellheavenlogo"></a>
+        </div>
+
+        <div class="title">
+            <h1>Buy tickets</h1>
+        </div>
+    </header>
+
+<!--date section-->
+    <div class="subsection">
+        <div class="subsection-1">
+                <h2>Dates</h2>
+                 <p> We are delighted to offer you an enhanced and user-friendly experience in planning your visit. To ensure convenience and simplicity, we have embedded a specially designed calendar that allows you to handpick a single date for your visit. <br><br>
+                 We understand the importance of your time and preferences, which is why we have disabled multiple date or range selections. <br>With just a few clicks, you can now easily choose the perfect date to witness the magical moment of turtle hatchlings making their way into the ocean. <br><br>
+                 <span>When are you coming : 
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <button id="prevMonth">&lt;</button>
+                            <h3 id="currentMonth"></h3>
+                            <button id="nextMonth">&gt;</button>
+                        </div>
+
+                        <div class="calendar" id="calendar"></div>
+                        <div class="selected-date-box" id="selectedDateBox">
+                            Selected Date: <span id="selectedDate"></span>
+                        </div>
+                    </div>
+                </span>
+                </p>
+        </div>
+        
+<!--Guest category section-->
+        <div class="subsection-2">
+            <h2>Guests</h2>
+            <p>Explore our Ticket Categories: Choose the Perfect Option for Your Memorable Experience!</p>
+            <p>Adult : Above 15 yrs &emsp; Child : 5 to 14 yrs &emsp; Infant : Under 4 yrs</p>
+            <p><span>Select the number of tickets for each category :</span></p>
+
+            <p>
+                <div class="box-container">
+                    <label for="SLChild">SL Child</label>
+                    <div class="categories">
+                        <button class="down">▼</button>
+                        <input type="number" class="cate" min="0">
+                        <button class="up">▲</button>
+                    </div>
+                </div>
+                
+                <div class="box-container">
+                    <label for="SLAdult">SL Adult</label>
+                    <div class="categories">
+                        <button class="down">▼</button>
+                        <input type="number" class="cate" min="0">
+                        <button class="up">▲</button>
+                    </div>
+                </div>
+                
+                <div class="box-container">
+                    <label for="ForeignerChild">Foreigner Child</label>
+                    <div class="categories">
+                        <button class="down">▼</button>
+                        <input type="number" class="cate" min="0">
+                        <button class="up">▲</button>
+                    </div>
+                </div>
+                
+                <div class="box-container">
+                    <label for="ForeignerAdult">Foreigner Adult</label>
+                    <div class="categories">
+                        <button class="down">▼</button>
+                        <input type="number" class="cate" min="0">
+                        <button class="up">▲</button>
+                    </div>
+                </div>
+                
+                <div class="box-container">
+                    <label for="infant">Infant</label>
+                    <div class="categories">
+                        <button class="down">▼</button>
+                        <input type="number" class="cate" min="0">
+                        <button class="up">▲</button>
+                    </div>
+                </div>
+            </P>
+        </div>
+
+
+<!--Duration section-->
+        <div class="subsection-3">
+            <h2>Duration</h2>
+            <p>Unlock a Tailored Adventure: Personalize Your Turtle Hatchery Experience with Hourly Time Slot Selection!</p>
+            <div class="subsection-33">
+                <div class="subsection-3-1">
+                    <p><span>charges based on 1 hour time slots.</span></p>
+                    <div class="charges">
+                        <p>-Charge per one Normal hour for Foreigner Adult - 10 USD</p>
+                        <p>-Charge per one Peak hour for Foreigner Adult - 13 USD</p>
+                        <p>-Charge per one Normal hour for Foreigner Child - 5 USD</p>
+                        <p>-Charge per one Peak hour for Foreigner Child - 8 USD</p>
+                        <p>-Charge per one Normal hour for SL Adult - 4 USD</p>
+                        <p>-Charge per one Peak hour for SL Adult - 6 USD</p>
+                        <p>-Charge per one Normal hour for SL Child - 2 USD</p>
+                        <p>-Charge per one Peak hour for SL Child - 3 USD</p>
+                        <p><Span>*Every Day from 10.00 am to 1.00 pm and from 3.00 pm to 6.00 pm will be considered as Peak hours.*</Span></p>
+                        <p><span>* Also for Infants (SL or Foreigner) (under 4 years) entrance is completely free.*</span></p>
+                    </div>
+                </div>
+                
+                <div class="subsection-3-2">
+                    <p><span>Select your preffered time slot :</span>
+                    <select id="duration" multiple>
+                        <option value="1">07.00 am - 08.00 am</option>
+                        <option value="2">08.00 am - 09.00 am</option>
+                        <option value="3">09.00 am - 10.00 am</option>
+                        <option value="4">10.00 am - 11.00 am(Peak)</option>
+                        <option value="5">11.00 am - 12.00 pm(Peak)</option>
+                        <option value="6">12.00 pm - 01.00 pm(Peak)</option>
+                        <option value="7">01.00 pm - 02.00 pm</option>
+                        <option value="8">02.00 pm - 03.00 pm</option>
+                        <option value="9">03.00 pm - 04.00 pm(Peak)</option>
+                        <option value="10">04.00 pm - 05.00 pm(Peak)</option>
+                        <option value="11">05.00 pm - 06.00 pm(Peak)</option>
+                    </select>
+                
+                
+                <div id="outputBox"></div></p>
+            </div> 
+        </div>
+        
+<!--pricing table -->
+        <div class="subsection-4">
+        <h2>Pricing Table</h2>
+        <div class="subsection-4-1">
+            <table class="Pricingtable"> 
+                <tr class="tr">
+                    <th class="td">Guest Type</th>
+                    <th class="td">Normal or Peak</th>
+                    <th class="td">Charges per person</th>
+                </tr>
+    
+                <tr class="tr">
+                    <td class="td1">Sri Lankan Adult</td>
+                    <td class="td1">Normal</td>
+                    <td class="td1">$ 4</td>
+                </tr>
+                <tr class="tr">
+                    <td class="td1">Sri Lankan Adult</td>
+                    <td class="td1">Peak</td>
+                    <td class="td1">$ 6</td>
+                </tr>
+        
+                <tr class="tr">
+                    <td class="td1">Sri Lankan Child</td>
+                    <td class="td1">Normal</td>
+                    <td class="td1">$ 2</td>
+                </tr>
+                <tr class="tr">
+                    <td class="td1">Sri Lankan Child</td>
+                    <td class="td1">Peak</td>
+                    <td class="td1">$ 3</td>
+                </tr>
+        
+                <tr class="tr">
+                    <td class="td1">Foreign Adult</td>
+                    <td class="td1">Normal</td>
+                    <td class="td1">$ 10</td>
+                </tr>
+                
+                <tr class="tr">
+                    <td class="td1">Foreign Adult</td>
+                    <td class="td1">Peak</td>
+                    <td class="td1">$ 13</td>
+                </tr>
+        
+                <tr class="tr">
+                    <td class="td1">Foreign CHild</td>
+                    <td class="td1">Normal</td>
+                    <td class="td1">$ 5</td>
+                </tr>
+    
+                <tr class="tr">
+                    <td class="td1">Foreign CHild</td>
+                    <td class="td1">Peak</td>
+                    <td class="td1">$ 8</td>
+                </tr>
+        
+                <tr class="tr">
+                    <td class="td1">Infants</td>
+                    <td class="td1">Normal / Peak</td>
+                    <td class="td1">Free</td>
+                </tr>
+            </table>
+        </div>
+
+<!--Summary Table-->
+        <div class="summary">
+            <h2>Summary</h2>
+            <table id="summary-table" class="summary-table"></table>
+        </div>
+<!--continue to purchase-->
+        <div class="lastbtn">
+            <input type="submit" value="Continue with Purchase" class="btn">
+        </div>
+          
+    
+        
+    </div>
+    
+    </div> 
+      
+
+    
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script src="Tickets.js"></script>
+</body>
+</html>
